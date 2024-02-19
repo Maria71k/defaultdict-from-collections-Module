@@ -1,0 +1,12 @@
+from collections import defaultdict
+
+def count_trees(forest):
+    tree_counts = defaultdict(int)
+    for tree in forest:
+        tree_counts[tree] += 1
+    return tree_counts
+
+# Example usage:
+forest = ["oak", "pine", "oak", "maple", "birch", "oak"]
+tree_counts = count_trees(forest)
+print("Tree counts in the forest:", dict(tree_counts))
